@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "postinstall": "curl -sSLo dist.zip 'https://github.com/mijnaansluiting/Inhoudelijke-validaties/releases/latest/download/nlcspp_inhoudelijke_validaties.zip' && unzip -qo dist.zip && rm dist.zip",
+    "postinstall": "../scripts/install-dist.sh",
     "transpile": "npx xslt3-he -t -xsl:dist/src/base/v12.xsl -export:dist/src/base/v12.sef.json -nogo",
     "validate": "node index.js"
   },
