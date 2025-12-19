@@ -1,0 +1,17 @@
+{
+  "name": "saxonjs-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "curl -sSLo dist.zip 'https://github.com/mijnaansluiting/Inhoudelijke-validaties/releases/latest/download/nlcspp_inhoudelijke_validaties.zip' && unzip -qo dist.zip && rm dist.zip",
+    "transpile": "npx xslt3-he -t -xsl:dist/src/base/v12.xsl -export:dist/src/base/v12.sef.json -nogo",
+    "validate": "node index.js"
+  },
+  "dependencies": {
+    "saxonjs-he": "^3.0.0-beta2"
+  }
+}
