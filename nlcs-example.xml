@@ -56,8 +56,6 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    <!--
-
     
     <MSkabel>
         <Uitvoering>1x16Cu as16</Uitvoering>
@@ -107,7 +105,6 @@
         </Geometry>
     </MSoverdrachtspunt>
     
--->
     <MSmof>
         <DatumAanleg>2000-12-31</DatumAanleg>
         <Status>BESTAAND</Status>
@@ -130,7 +127,7 @@
         </Geometry>
     </MSmof> 
     
-    <!-- <MSstation>
+    <MSstation>
         <Nummer>ABC-123</Nummer>
         <DatumAanleg>2000-12-31</DatumAanleg>
         <Status>BESTAAND</Status>
@@ -188,6 +185,6 @@
         <MantelbuisID>G</MantelbuisID>
         <InhoudID>B</InhoudID>
         <ID>H</ID>
-    </AmantelbuisInhoud> -->
+    </AmantelbuisInhoud>
     
 </NLCSnetbeheer>
