@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer https://raw.githubusercontent.com/mijnaansluiting/Inhoudelijke-validaties/refs/heads/main/doc/NLCS_Netbeheer_Keuzelijst.xsd"
+               xmlns="NS_NLCSnetbeheer">
+    <AprojectReferentie>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            0.0   0.0
+                            480.0 0.0
+                            480.0 240.0
+                            0.0   240.0
+                            0.0   0.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+    
+    <MSkabel>
+        <Uitvoering>1x16Cu as16</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>AEG</Fabrikant>
+        <DatumAanleg>2000-12-31</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 30cm</Nauwkeurigheid>
+        <Verbindingnummer>5</Verbindingnummer>
+        <Subnettype>AANSLUITNET</Subnettype>
+        <FaseAanduiding>L1</FaseAanduiding>
+        <GisId>B</GisId>
+        <AssetId>B</AssetId>
+        <ID>B</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    40.0  40.0 0
+                    100.0 100.0 0
+                    160.0 120.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <!--
+
+    
+    <MSkabel>
+        <Uitvoering>1x16Cu as16</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>AEG</Fabrikant>
+        <DatumAanleg>2000-12-31</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 30cm</Nauwkeurigheid>
+        <Verbindingnummer>5</Verbindingnummer>
+        <Subnettype>AANSLUITNET</Subnettype>
+        <FaseAanduiding>L1</FaseAanduiding>
+        <GisId>C</GisId>
+        <AssetId>C</AssetId>
+        <ID>C</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    160.0 120.0 0
+                    280.0 160.0 0
+                    360.0 160.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    
+    <MSoverdrachtspunt>
+        <DatumAanleg>2000-12-31</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Identificatie>12345</Identificatie>
+        <GisId>D</GisId>
+        <AssetId>D</AssetId>
+        <ID>D</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    40.0 40.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSoverdrachtspunt>
+    
+-->
+    <MSmof>
+        <DatumAanleg>2000-12-31</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Functie>VERBINDING</Functie>
+        <Verbindingnummer>5</Verbindingnummer>
+        <NaamMonteur>John Doe</NaamMonteur>
+        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
+        <GisId>E</GisId>
+        <AssetId>E</AssetId>
+        <ID>E</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    160.0 120.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof> 
+    
+    <!-- <MSstation>
+        <Nummer>ABC-123</Nummer>
+        <DatumAanleg>2000-12-31</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Functie>VERDEELSTATION</Functie>
+        <AssetId>F</AssetId>
+        <ID>F</ID>
+        <GisId>F</GisId>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            360.0 120.0
+                            360.0 200.0
+                            440.0 200.0
+                            440.0 120.0
+                            360.0 120.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </MSstation>
+    
+    <Amantelbuis>
+        <Materiaal>PVC</Materiaal>
+        <Diameter>100</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 50cm</Nauwkeurigheid>
+        <Thema>ET_MS</Thema>
+        <GisId>G</GisId>
+        <AssetId>G</AssetId>
+        <ID>G</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    50.0  50.0 0
+                    90.0  90.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </Amantelbuis>
+    
+    <AmantelbuisInhoud>
+        <AssetId>H</AssetId>
+        <ObjectTypeInhoud>MSkabel</ObjectTypeInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>G</MantelbuisID>
+        <InhoudID>B</InhoudID>
+        <ID>H</ID>
+    </AmantelbuisInhoud> -->
+    
+</NLCSnetbeheer>
