@@ -11,5 +11,5 @@ This project serves as a very basic example of how NLCS++ validations can be per
 
 ### Executing validations
 
-* Run `npm run validate -- xml=path/to/nlcs.xml`, replacing `path/to/nlcs.xml` with your NLCS++ file
-* The NLCS++ validation report should generate at `path/to/nlcs.svrl.xml`
+* Run `npm run validate -- xml=../nlcs-example.xml`
+* The NLCS++ validation report should generate at `nlcs-example.svrl.xml`

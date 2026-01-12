@@ -10,4 +10,5 @@ This project serves as a very basic example of how NLCS++ validations can be per
 
 ### Executing validations
 
-* Run `java -jar saxon-he.jar -xsl:dist/src/base/v12.xsl -s:path/to/nlcs.xml -o:path/to/report.svrl.xml`, replacing `path/to/nlcs.xml` with your NLCS++ file and `path/to/report.svrl.xml` with your desired validation report location
+* Run `java -jar saxon-he.jar -xsl:dist/src/base/v12.xsl -s:../nlcs-example.xml -o:nlcs-example.svrl.xml`
+* The NLCS++ validation report should generate at `nlcs-example.svrl.xml`
