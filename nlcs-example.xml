@@ -2,25 +2,26 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="NS_NLCSnetbeheer https://raw.githubusercontent.com/mijnaansluiting/Inhoudelijke-validaties/refs/heads/main/doc/NLCS_Netbeheer_Keuzelijst.xsd"
+               xsi:schemaLocation="NS_NLCSnetbeheer https://schemas.mijnaansluiting.nl/V12.1/NLCS_NetbeheerEnexisV12.1Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer">
     <AprojectReferentie>
+        <ID>A</ID>
         <Projectnummer>1</Projectnummer>
         <Netbeheerder>Enexis</Netbeheerder>
-        <ID>A</ID>
+        <NaamAannemer>John Doe B.V.</NaamAannemer>
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
         <Geometry>
             <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
+                srsDimension="3"
+                srsName="EPSG:7415">
                 <gml:exterior>
                     <gml:LinearRing>
                         <gml:posList>
-                            0.0   0.0
-                            480.0 0.0
-                            480.0 240.0
-                            0.0   240.0
-                            0.0   0.0
+                            0   0   0
+                            480 0   0
+                            480 240 0
+                            0   240 0
+                            0   0   0
                         </gml:posList>
                     </gml:LinearRing>
                 </gml:exterior>
@@ -29,6 +30,7 @@
     </AprojectReferentie>
     
     <MSkabel>
+        <ID>B</ID>
         <Uitvoering>1x16Cu as16</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>AEG</Fabrikant>
@@ -43,21 +45,21 @@
         <FaseAanduiding>L1</FaseAanduiding>
         <GisId>B</GisId>
         <AssetId>B</AssetId>
-        <ID>B</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
-                srsName="EPSG:28992">
+                srsName="EPSG:7415">
                 <gml:posList>
-                    40.0  40.0 0
-                    100.0 100.0 0
-                    160.0 120.0 0
+                    40  40  0
+                    100 100 0
+                    160 120 0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
     
     <MSkabel>
+        <ID>C</ID>
         <Uitvoering>1x16Cu as16</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>AEG</Fabrikant>
@@ -72,40 +74,40 @@
         <FaseAanduiding>L1</FaseAanduiding>
         <GisId>C</GisId>
         <AssetId>C</AssetId>
-        <ID>C</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
-                srsName="EPSG:28992">
+                srsName="EPSG:7415">
                 <gml:posList>
-                    160.0 120.0 0
-                    280.0 160.0 0
-                    360.0 160.0 0
+                    160 120 0
+                    280 160 0
+                    360 160 0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
     
     <MSoverdrachtspunt>
+        <ID>D</ID>
         <DatumAanleg>2000-12-31</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <Identificatie>12345</Identificatie>
         <GisId>D</GisId>
         <AssetId>D</AssetId>
-        <ID>D</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
                 srsName="EPSG:7415">
                 <gml:pos>
-                    40.0 40.0 0
+                    40 40 0
                 </gml:pos>
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
     
     <MSmof>
+        <ID>E</ID>
         <DatumAanleg>2000-12-31</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
@@ -115,39 +117,38 @@
         <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
         <GisId>E</GisId>
         <AssetId>E</AssetId>
-        <ID>E</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
                 srsName="EPSG:7415">
                 <gml:pos>
-                    160.0 120.0 0
+                    160 120 0
                 </gml:pos>
             </gml:Point>
         </Geometry>
     </MSmof> 
     
     <MSstation>
+        <ID>F</ID>
         <Nummer>ABC-123</Nummer>
         <DatumAanleg>2000-12-31</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <Functie>VERDEELSTATION</Functie>
         <AssetId>F</AssetId>
-        <ID>F</ID>
         <GisId>F</GisId>
         <Geometry>
             <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
+                srsDimension="3"
+                srsName="EPSG:7415">
                 <gml:exterior>
                     <gml:LinearRing>
                         <gml:posList>
-                            360.0 120.0
-                            360.0 200.0
-                            440.0 200.0
-                            440.0 120.0
-                            360.0 120.0
+                            360 120 0
+                            360 200 0
+                            440 200 0
+                            440 120 0
+                            360 120 0
                         </gml:posList>
                     </gml:LinearRing>
                 </gml:exterior>
@@ -156,6 +157,7 @@
     </MSstation>
     
     <Amantelbuis>
+        <ID>G</ID>
         <Materiaal>PVC</Materiaal>
         <Diameter>100</Diameter>
         <Status>BESTAAND</Status>
@@ -165,26 +167,25 @@
         <Thema>ET_MS</Thema>
         <GisId>G</GisId>
         <AssetId>G</AssetId>
-        <ID>G</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
-                srsName="EPSG:28992">
+                srsName="EPSG:7415">
                 <gml:posList>
-                    50.0  50.0 0
-                    90.0  90.0 0
+                    50 50 0
+                    90 90 0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </Amantelbuis>
     
     <AmantelbuisInhoud>
+        <ID>H</ID>
         <AssetId>H</AssetId>
         <ObjectTypeInhoud>MSkabel</ObjectTypeInhoud>
         <Status>BESTAAND</Status>
         <MantelbuisID>G</MantelbuisID>
         <InhoudID>B</InhoudID>
-        <ID>H</ID>
     </AmantelbuisInhoud>
     
 </NLCSnetbeheer>
